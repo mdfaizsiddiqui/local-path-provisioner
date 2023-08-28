@@ -89,6 +89,8 @@ kind: StorageClass
 metadata:
   name: local-path
 provisioner: rancher.io/local-path
+parameters:
+  fsType: xfs
 volumeBindingMode: WaitForFirstConsumer
 reclaimPolicy: Delete
 
